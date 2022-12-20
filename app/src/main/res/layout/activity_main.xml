@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/kalkulator"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="KALKULATOR SEDERHANA"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:layout_marginBottom="15dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#305a72"
+        android:text="BILANGAN PERTAMA"
+        android:textColor="@color/white"
+        android:textSize="10pt"
+        android:textStyle="bold" />
+    <EditText
+
+        android:id="@+id/edit_bilangan_pertama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:layout_marginBottom="5dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="BILANGAN KEDUA"
+        android:textSize ="10pt"
+        android:textStyle="bold"
+        android:background="#305a72"
+        android:textColor="@color/white"/>
+    <EditText
+
+        android:id="@+id/edit_bilangan_kedua"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:layout_marginBottom="5dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <Button
+        android:id="@+id/btn_tambah"
+        androidlayout_marginRight="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:text="+" />
+
+    <Button
+        android:id="@+id/btn_kurang"
+        androidlayout_marginRight="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="-" />
+
+    <Button
+        android:id="@+id/btn_bagi"
+        androidlayout_marginRight="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="/" />
+    <Button
+        android:id="@+id/btn_kali"
+        androidlayout_marginRight="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="*" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btn_pangkatdua"
+            androidlayout_marginRight="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:text="^2" />
+
+        <Button
+            android:id="@+id/btn_modulus"
+            androidlayout_marginRight="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:text="Mod" />
+        <Button
+            android:id="@+id/btn_akar"
+            androidlayout_marginRight="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:text="√" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/text_hasil_kalkulator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="10pt"
+        android:text="HASIL KALKULATOR"/>
+</LinearLayout>
